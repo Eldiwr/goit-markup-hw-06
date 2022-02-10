@@ -324,6 +324,81 @@ b {
 	border-radius: 50px;
 }
 
+.footer-form-container {
+	margin-left: 93px;
+}
+
+.footer-form-group {
+	display: flex;
+	align-items: center;
+}
+
+.footer-input {
+
+	padding-left: 16px;
+
+	width: 358px;
+	height: 50px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+
+	outline: none;
+
+	background-color: var(--footer-background-color);
+
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:hover,
+.footer-input:focus {
+
+	border-color:  var(--focus-color);
+}
+
+.footer-input::placeholder {
+	
+	font-size: 16px;
+	line-height: 1.25;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-submit-button {
+
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+	margin-left: 12px;
+	padding-left: 29px;
+	padding-right: 13px;
+
+	max-width: 200px;
+	height: 50px;
+
+	border-width: 0px;
+	
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+
+	outline: none;
+
+	background-color: var(--focus-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	color: var(--primary-background-color);
+}
+
+.footer-icon-send {
+	margin-left: 10px;
+}
+
+/* -----------Form footer----------- */
+
+
 
 /* ----------Maine content---------- */
 
@@ -506,7 +581,6 @@ b {
 	padding: 12px 16px;
 
 	outline: none;
-	cursor: pointer;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	box-sizing: border-box;
@@ -543,6 +617,8 @@ color: rgba(117, 117, 117, 0.5);
 	margin-left: auto;
 
 	padding: 10px 55px 10px 56px;
+
+	border-width: 0px;
 	
 	font-weight: 700;
 	font-size: 16px;
@@ -623,7 +699,8 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .policy-checkbox {
-	display: none;
+	position: absolute;
+	appearance: none;
 }
 
 .policy-link {
