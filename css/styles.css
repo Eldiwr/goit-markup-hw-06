@@ -311,10 +311,6 @@ color: var(--focus-color);
 	margin-right: 70px;
 }
 
-.social-div {
-	margin-right: 93px;
-}
-
 b {
 	display: block;
 	margin-bottom: 20px;
@@ -337,6 +333,10 @@ b {
 .footer-form-group {
 	display: flex;
 	align-items: center;
+}
+
+.footer-form-container {
+	margin-left: auto;
 }
 
 .footer-input {
@@ -489,12 +489,13 @@ b {
 .modal {
 	position: absolute;
 
+	padding: 40px;
 	top:50%;
 	left:50%;
 	transform: translate(-50%, -50%);
 
-	min-height: 528px; 
-	min-width: 581px;
+	min-height: 581px; 
+	min-width: 528px;
 
 	background-color: var(--primary-background-color);
 
@@ -507,12 +508,14 @@ b {
 }
 
 .close-button {
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: auto;
-	margin-top: 8px;
-	margin-right: 8px;
+
+	top: 8px;
+	right: 8px;
+
 	width: 30px;
 	height: 30px;
 	border-radius: 50px;
@@ -548,9 +551,7 @@ b {
 	flex-direction: column;
 
 	margin-top: 12px;
-	padding-left: 41px;
-	padding-right: 39px;
-	padding-bottom: 40px;
+	
 }
 
 .modal-label:not(:first-child) {
@@ -650,7 +651,7 @@ color: rgba(117, 117, 117, 0.5);
 
 .policy {
 
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 30px;
 }
 
